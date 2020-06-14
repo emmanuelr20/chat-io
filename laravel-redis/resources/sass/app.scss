@@ -1,0 +1,95 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+// font-awesome
+@import "~font-awesome/scss/font-awesome";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+
+//chat 
+@import "./chat";
+
+body {
+    color: #201e38;
+    overscroll-behavior-x: none;
+    overscroll-behavior-y: none;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #bbbbbb;
+}
+
+.navbar {
+    z-index: 2;
+    padding: 0.5rem 1.5rem;
+}
+
+.input-group-text {
+    width: 40px;
+    justify-content: center;
+    border: solid 0.5px #eeeeee;
+    background-color: #f1f1f1;
+    color: #666666;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.btn-outline-secondary {
+    border-color: #dddddd;
+}
+
+.btn {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .08);
+}
+
+.form-control {
+    border: solid 0.5px #eeeeee;
+}
+
+.search-form {
+    position: relative;
+
+    i {
+        position: absolute;
+        right: 15px;
+        color: #dddddd;
+    }
+
+    .form-control {
+        outline: none;
+        padding-right: 30px;
+        width: 280px;
+    }
+
+    .form-control:focus {
+        outline: none;
+        box-shadow: none;
+        border-bottom-color: #a1cbef;
+    }
+
+    .form-control::placeholder {
+        color: #dddddd;
+    }
+}
